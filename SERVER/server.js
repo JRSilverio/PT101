@@ -19,14 +19,15 @@ var server = app.listen(8080, function(){
 })
 
 //Step 1: Create a new user variable
-var user = {
- "user5": {
-     "id":5,
-     "firstname":"Liudmyla",
-     "lastname":"Nagorna",
-     "email":"mila@gmail.com"
-   }
-} 
+var employee = {
+    "employee6":  {
+        "id":6,
+        "company":"Chowking",
+        "name":"Marta Langford",
+        "position":"Assistant Manager",
+        "location":"Mati"
+    } 
+}
 
 //The addUser endpoint
 app.put('/addUser', function(req, res){
@@ -34,7 +35,7 @@ app.put('/addUser', function(req, res){
  fs.readFile(__dirname + "/" + "users.json", 'utf8', function(err, data){
      data = JSON.parse(data);
      //Step 3: append user variable to list
-     data["user5"] = user["user5"];
+     data["employee6"] = employee["employee6"];
      console.log(data);
      res.end(JSON.stringify(data));
  });
@@ -45,7 +46,7 @@ app.get('/:id', function (req, res) {
     // First retrieve existing user list
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        var users = JSON.parse( data );
-       var user = users["user" + req.params.id] 
+       var user = users["employee" + req.params.id] 
        console.log( user );
        res.end( JSON.stringify(user));
     });
@@ -56,7 +57,7 @@ app.get('/:id', function (req, res) {
     // First retrieve existing users
     fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
-       delete data["user" + id];
+       delete data["employee" + id];
         
        console.log( data );
        res.end( JSON.stringify(data));

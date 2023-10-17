@@ -1,30 +1,41 @@
 {
- "user1": {
-   "id":1,
-   "firstname":"Munonye",
-   "lastname":"Kindson",
-   "email":"kany@gmail.com"
- },
-
- "user2":  {
-   "id":2,
-   "firstname":"Imolode",
-   "lastname":"Saffron",
-   "email":"saffron@gmail.com"
- },
-
- "user3":  {
-   "id":3,
-   "firstname":"Munonye",
-   "lastname":"Othniel",
-   "email":"othniel@gmail.com"
- },
-
- "user4": {
-   "id":4,
-   "firstname":"Yuba",
-   "lastname":"Oleander",
-   "email":"oleander@gmail.com"
+  "employee1": {
+    "id":1,
+    "company":"Mang Inasal",
+    "name":"Pàulu Van Rossem",
+    "position":"Manager",
+    "location":"Samal"
+  },
+ 
+  "employee2":  {
+    "id":2,
+    "company":"McDo",
+    "name":"Chiaki Van Hout",
+    "position":"Cashier",
+    "location":"Davao"
+  },
+ 
+  "employee3":  {
+    "id":3,
+    "company":"McDo",
+    "name":"Su'en Çelik",
+    "position":"Assistant Manager",
+    "location":"Mati"
+  },
+ 
+  "employee4": {
+    "id":4,
+    "company":"Jollibee",
+    "name":"Novella Manfredi",
+    "position":"Janitor",
+    "location":"Tagum"
+  },
+ 
+  "employee5": {
+   "id":5,
+   "company":"Mang Inasal",
+   "name":"Danielius Sartore",
+   "position":"It",
+   "location":"Digus"
  }
-}
-
+ }
